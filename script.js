@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const resumeContent = `
 SNEHA SHANKUR
 AI & Data Science Student | Python Developer | Software Developer
-Email: snehashankur@example.com | Phone: +91 98765 43210
+Email: snehashankur23@gamil.com | Phone: +91 8485888366
 GitHub: https://github.com/SnehaShankur | LinkedIn: https://linkedin.com/in/snehashankur
 
 =========================================
