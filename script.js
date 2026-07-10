@@ -240,84 +240,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const downloadResumeBtn = document.getElementById('download-resume');
     
     if (downloadResumeBtn) {
-        downloadResumeBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            
-            // Content profile file data string
-            const resumeContent = `
-SNEHA SHANKUR
-AI & Data Science Student | Python Developer | Software Developer
-Email: snehashankur23@gamil.com | Phone: +91 8485888366
-GitHub: https://github.com/SnehaShankur | LinkedIn: https://linkedin.com/in/snehashankur
-
-=========================================
-ABOUT ME
-=========================================
-I am a final-year B.Tech student in Artificial Intelligence and Data Science (2026). 
-I enjoy building AI applications, Python projects, and software solutions. 
-I have experience with Python, SQL, Java, Flask, Power BI, Machine Learning, and Git.
-
-=========================================
-EDUCATION
-=========================================
-B.Tech – Artificial Intelligence & Data Science
-NKOCET | CGPA: 7.05 (2022 - 2026)
-
-=========================================
-EXPERIENCE
-=========================================
-Python Full Stack with Data Analytics Intern
-QSpiders | Feb 2026 – Present
-- Backend scripting with Flask.
-- Relational database schema, index improvements and SQL query builds.
-- Visualizing data patterns for transactional feeds.
-
-=========================================
-SKILLS & EXPERTISE
-=========================================
-- Programming: Python, Java, SQL, JavaScript
-- Web: HTML, CSS, Flask, Django
-- Database: Oracle SQL, MySQL
-- Libraries: Pandas, NumPy, TensorFlow, Scikit-learn, OpenCV
-- Tools: Git, GitHub, VS Code, Jupyter Notebook, Power BI
-
-=========================================
-PROJECTS
-=========================================
-1. AI-Based Solar Panel Dust Detection System
-   Technologies: Python, TensorFlow, CNN, SVM, OpenCV
-   Description: Automating dust threshold classification to structure cleaning schedules.
-
-2. Hyper RouteX – AI-Based Traffic Management System
-   Technologies: Python, Flask, OpenCV, SQL
-   Description: Detecting traffic congestion using computer vision camera feeds for alternate routing.
-
-3. Retail Sales Analytics Dashboard
-   Technologies: Power BI, SQL, Excel
-   Description: Mapping retail store transaction datasets to dynamic metric dashboards.
-
-=========================================
-CERTIFICATIONS
-=========================================
-- NVIDIA Fundamentals of Deep Learning
-- Infosys Springboard Power BI
-- Advanced Google Analytics
-            `.trim();
-
-            // Create download anchor trigger element
-            const blob = new Blob([resumeContent], { type: 'text/plain' });
-            const url = URL.createObjectURL(blob);
-            const anchor = document.createElement('a');
-            anchor.href = url;
-            anchor.download = 'Sneha_Shankur_Resume.txt';
-            document.body.appendChild(anchor);
-            anchor.click();
-            
-            // Clean-up refs
-            document.body.removeChild(anchor);
-            URL.revokeObjectURL(url);
-            
-            console.log('Resume downloaded successfully.');
-        });
+       downloadResumeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.open('Sneha%20Shankur.pdf', '_blank');
+});
     }
 });
